@@ -14,8 +14,9 @@ import java.sql.ResultSet;
 public class ProductRepository {
 
     DatabaseConnection databaseConnection;
-    List<Product>   products;
+    
     public ProductRepository(DatabaseConnection databaseConnection2) {
+        this.databaseConnection=databaseConnection2;
     }
 
     @Autowired
